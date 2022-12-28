@@ -361,7 +361,7 @@ then
         next=`grep 'id="next-chapter-link"' xxx.html | sed 's/.*next-chapter-link.><a href=.//;s/".*$//'`
         lnext=$next
         # We add the /N or /D because we sometimes have to
-        uuu=http://listen.bible.is${next}"/"${dsuffix}
+        uuu=http://listen.bible.is${next}
         echo $uuu >>yyy.html
         if [ "$next" = "" ]
         then
